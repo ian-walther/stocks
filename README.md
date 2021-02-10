@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
 
-Things you may want to cover:
+This application requires Ruby 2.7.1
 
-* Ruby version
+## Development
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+After cloning this repo, the following steps are needed to run the app:
+* `cd` into the repo folder
+* install the required Ruby version if needed using RVM or rbenv
+* run `rails install:webpacker` Note: this requires that yarn be installed
+* `rails s` to run the application
