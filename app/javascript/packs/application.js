@@ -16,5 +16,6 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 //= require jquery3
+//= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets

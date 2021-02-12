@@ -26,6 +26,19 @@ gem 'haml-rails'
 gem 'bootstrap'
 gem 'jquery-rails'
 
+gem 'devise'
+
+gem 'mongoid', '~> 7.0.5'
+
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'cucumber', require: false
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'mongoid-rspec'
+  gem 'poltergeist'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
