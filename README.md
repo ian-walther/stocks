@@ -20,4 +20,5 @@ After cloning this repo, the following steps are needed to run the app:
 
 To run the application in a stripped down production environment using docker: 
 * Clone the repo on the target machine.
+* Copy the master.key file to the config directory within the repo
 * Run `docker-compose build && docker-compose up` from the project directory. This will start the server as well as a MongoDB instance. Note that as configured, the MongoDB does not mount any volumes from the host. All data in the database will be lost if the docker container is later pruned.

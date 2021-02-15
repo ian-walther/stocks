@@ -10,6 +10,8 @@ class StocksController < ApplicationController
       @opening_price = ::StockService.get_opening_price @stock
     rescue StockService::NoStockFoundError => e
       return render 'stock_not_found'
+    rescue FinnhubRuby::ApiError => e
+      return render 'api_error'
     end
     render 'show_price'
   end
