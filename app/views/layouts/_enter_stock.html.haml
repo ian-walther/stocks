@@ -1,0 +1,4 @@
+=form_with url: show_price_url, method: :get do |form|
+  =form.label :id, "Enter stock name"
+  =form.text_field :id
+  =form.submit "Find Price", name: nil

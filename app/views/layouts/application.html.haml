@@ -7,14 +7,14 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   %body
-    -#%p.notice=notice
-    -#%p.alert=alert
     %nav.navbar.navbar-dark.bg-dark.justify-content-between
-      %span.navbar-brand.mb-0.h1
+      %a.navbar-brand.mb-0.h1{href: '/'}
         Stock Middleman
       -if current_user
         %ul.navbar-nav
           %li.nav-item
             =link_to 'Logout', destroy_user_session_path, method: :delete
     %div.container
-      = yield
+      %div.d-flex.justify-content-center
+        %div
+          = yield

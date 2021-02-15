@@ -30,10 +30,11 @@ gem 'devise'
 
 gem 'mongoid', '~> 7.0.5'
 
+
 group :test do
   gem 'cucumber-rails', require: false
-  gem 'cucumber', require: false
-  gem 'database_cleaner'
+  gem 'database_cleaner-mongoid'
+  gem 'capybara'
   gem 'rspec-rails'
   gem 'mongoid-rspec'
   gem 'poltergeist'
@@ -55,3 +56,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "finnhub_ruby", "~> 1.1"
