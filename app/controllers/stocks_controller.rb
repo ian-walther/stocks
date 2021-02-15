@@ -11,7 +11,7 @@ class StocksController < ApplicationController
     else
       begin
         opening_price = ::StockService.get_opening_price stock
-        @message = "#{stock} opened at #{opening_price}"
+        @message = "#{stock} opened at $#{opening_price}"
       rescue StockService::NoStockFoundError => e
         @message = "#{stock} could not be found"
       rescue FinnhubRuby::ApiError => e
