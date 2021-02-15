@@ -16,6 +16,10 @@ After cloning this repo, the following steps are needed to run the app:
 * run `rails install:webpacker`
 * run `rails s` to run the application
 
+## Tests
+
+To run the test suite, run `bundle exec cucumber`
+
 ## Running in Production
 
 To run the application in a stripped down production environment using docker: 
