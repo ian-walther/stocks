@@ -159,3 +159,10 @@ test:
       hosts:
         - localhost:27017
       options:
+
+production:
+  clients:
+    default:
+      database: stocks_production
+      hosts:
+        - mongo:27017

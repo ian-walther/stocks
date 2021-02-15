@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  stocks:
+    build: .
+    ports:
+      - "80:80"
+    links:
+      - mongo
+  mongo:
+    image: "mongo:latest"
