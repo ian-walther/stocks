@@ -84,3 +84,10 @@ end
 Then(/^I should be on the show price page$/) do
   expect(current_path).to eql show_price_path
 end
+
+And(/^I don't enter a stock name$/) do
+end
+
+And(/^the stock service is stubbed to return an ApiError$/) do
+  allow(StockService).to receive(:get_opening_price).and_raise(FinnhubRuby::ApiError)
+end
